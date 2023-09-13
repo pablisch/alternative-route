@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Poppins:wght@400;700&display=swap');
+
+/* GLOBAL */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* set colour variables */
+
+:root {
+  --panelMidLight: #ddd;
+  --inputBorder: #b5b5b5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  background: #eaeaea;
+  color: #fff;
+}
+
+.view-width {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.view-width-plus {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+
+/* NAVBAR */
+
+nav {
+  background-color: #fff;
+  height: 70px;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-brand h1 {
+  font-family: 'Hammersmith One';
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.nav-brand span, .about-page span {
+  color: #c929b9;
+}
+
+.nav-brand img {
+  max-width: 65px;
+  padding-right: 20px;
+  margin-left: 10px;
+}
+
+.nav-items ul {
+  list-style: none;
+  margin: 0 10px 0 0 ;
+  padding: 0;
+  display: flex;
+}
+
+.nav-items ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0 0 0 20px;
+}
+
+.nav-items .inactive {
+  color: #a2b579;
+  pointer-events: none;
+  cursor: inherit;
+}
+
+/* MAIN SECTION */
+
+#forms-and-lists {
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.main-section h2 {
+  font-size: 1.39rem;
+  font-weight: 400;
+  color: #555555;
+  padding: 20px 10px;
+}
+
+.main-section h3 {
+  font-family: "Hammersmith One";
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 10px 0;
+  opacity: 0.5;
+}
+
+.panel {
+  flex: 1 1;
+  background-color: #4d4d4d;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: 4px solid #070733;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.main-section .track-form {
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.original-stations-panel {
+  color: #fffcc5;
+}
+
+.new-stations-panel {
+  color: #4eeffe;
+}
+
+form button {
+  margin-top: 15px;
+}
+
+form label {
+  font-family: 'Hammersmith One';
+  font-size: 1.3rem;
+}
+
+.main-section .not-in-service {
+  color: #fad85d;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 20px 30px;
+}
+
+.main-section .loading {
+  color: #81ff03;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px 30px;
+  opacity: 0.8;
+}
+
+.list p {
+  padding: 0;
+  margin: 0;
+}
+
+/* FORM ELEMENTS */
+
+.text-input-label {
+  margin-top: 20px;
+}
+
+input[type='text'] {
+  background: #eee;
+  border: 0;
+  padding: 10px;
+  border-radius: 4px;
+  width: 90%;
+  margin: 5px auto 10px;
+}
+
+input[type="radio"] {
+  /* Hide the default radio button */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 12px; 
+  height: 12px;
+  border: 2px solid #ccc; 
+  border-radius: 50%; /* Makes it circular */
+  margin-right: 10px; 
+  cursor: pointer; /* Show a pointer cursor on hover */
+}
+
+input[type="radio"]:checked {
+  border: 2.5px solid #4eeffe;
+  background-color: #142ffb;
+}
+
+/* FORM BUTTON */
+
+button {
+  background: #bbb;
+  color: #333;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 2px 3px 5px #111;
+  padding: 5px 15px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  top: 0;
+}
+
+button:hover {
+  background: #bbfa62;
+}
+
+button:active {
+  border-bottom-width: 2px;
+  top: 3px;
+}
+
+form span {
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #8aeaff;
+}
+
+/* ABOUT PAGE SPECIFIC */
+
+.about-page {
+  text-align: center;
+}
+
+.about-page a {
+  text-decoration: none;
+}
+
+.about-page h1 {
+  color: #333;
+  font-family: "Hammersmith One";
+  font-size: 1.9rem;
+  padding: 40px 10px 10px;
+}
+
+.about-page p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #555555;
+  padding: 10px;
+}
+
+.top-text {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.left-text, .right-text {
+  flex: 1 1;
+  padding: 10px;
+}
+
+.lupo-logo-div img {
+  max-width: 300px;
+  margin: 10px auto 0;
+  padding: 0 30px;
+  display: block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .lupo-logo {
+    animation: lupo-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes lupo-logo-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* CONTACT PAGE SPECIFIC */
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+#contact-form-container {
+  max-width: 450px;
+  margin: 50px auto 0;
+  padding: 20px 40px;
+  border: 1px solid #999;
+  border-radius: 15px;
+  background-color: var(--panelMidLight);
+  color: #777;
+  box-shadow: 0 0 20px 15px #fff;
+}
+
+#contact-form-container h2 {
+  font-family: "Hammersmith One";
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+#contact-form label {
+  font-family: "Poppins";
+  display: block;
+  margin: 15px 0 5px;
+  font-size: 1.2rem;
+}
+
+#contact-form input {
+  background-color: #fff;
+  color: #444;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--inputBorder);
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+/* Hide the default checkbox */
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the custom checkbox container */
+.custom-checkbox .checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff; /* Change this to the desired border color */
+  border: 1px solid var(--inputBorder); 
+  border-radius: 4px;
+  margin: 30px 10px 0 0;
+}
+
+/* Style the custom checkbox when checked */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #007bff; /* Change this to the desired background color when checked */
+  border: 2px solid #007bff; /* Change this to the desired border color when checked */
+}
+
+/* Style the label text */
+.custom-checkbox label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+#contact-form button {
+  display: block;
+  width: 50%;
+  margin: 20px auto 15px;
+  padding: 10px;
+  background-color: #6fa060;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #12841e;
+  color: #e2ff05;
+}
+
+#contact-form #newsletter-label {
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+/* POP UP CONFIRMATION FOR CONTACT */
+
+.popup {
+  background-color: rgb(208, 224, 177);
+  color: #575b57;
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid #3c423c;
+  text-align: center;
+  z-index: 1000;
+  width: 450px;
+  height: 547px;
+  margin: 50px auto 0;
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack child elements vertically */
+  justify-content: center; /* Vertically center child elements */
+  font-size: 2.2rem;
+  box-shadow: 0 0 20px 15px rgba(245, 250, 195, 0.5);
+}
+
+.hidden {
+  display: none;
+}
